@@ -579,7 +579,7 @@
 			handle_eye_contact(examinify)
 	else
 		result = examinify.examine(src) // if a tree is examined but no client is there to see it, did the tree ever really exist?
-
+	
 	if(result.len)
 		for(var/i in 1 to (length(result) - 1))
 			result[i] += "\n"

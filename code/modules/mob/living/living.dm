@@ -213,6 +213,10 @@
 	mob_details += "You can also see [src] on the photo[health < (maxHealth * 0.75) ? ", looking a bit hurt":""][holding ? ". [holding.Join("")]":"."]."
 	return mob_details.Join("")
 
+/mob/living/examine(mob/user)
+	. = ..()
+	. += late_examine(user)
+
 //Called when we bump onto an obj
 /mob/living/proc/ObjBump(obj/O)
 	return

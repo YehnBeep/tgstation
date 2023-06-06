@@ -147,6 +147,9 @@
 				. += "[t_He] look[p_s()] very happy."
 			if(MOOD_HAPPY4 to INFINITY)
 				. += "[t_He] look[p_s()] ecstatic."
+				
+	. += late_examine(user)
+	
 	. += "</span>"
 
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .)
